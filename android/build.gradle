@@ -1,0 +1,20 @@
+buildscript {
+    ext.kotlin_version = '1.8.0'  // Pastikan versi Kotlin yang sesuai
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.2'  // Gunakan versi Gradle terbaru yang stabil
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"  // Versi Kotlin sesuai dengan ext.kotlin_version
+        // Hapus baris berikut karena tidak diperlukan:
+        // classpath 'dev.flutter:flutter-gradle-plugin:1.0.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
